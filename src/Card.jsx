@@ -5,7 +5,7 @@ export default function Card() {
   return (
     <>
       <img src="./images/illustration-woman-online-mobile.svg"></img>
-      <h1></h1>
+      <h1>FAQ</h1>
 
       <div>
         <Question>
