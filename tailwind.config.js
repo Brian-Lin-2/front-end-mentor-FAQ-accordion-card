@@ -6,6 +6,10 @@ export default {
   ],
   theme: {
     extend: {
+      backgroundImage: {
+        'mobile-pattern': "url('/images/bg-pattern-mobile.svg')",
+        'desktop-pattern': "url('/images/bg-pattern-desktop.svg')",
+      },
       fontFamily: {
         'kumbh-sans': ['Kumbh Sans', 'sans-serif'],
       },
@@ -17,6 +21,9 @@ export default {
         'very-dark-grayish-blue': 'hsl(237, 12%, 33%)',
         'dark-grayish-blue': 'hsl(240, 6%, 50%)',
         'light-grayish-blue': 'hsl(240, 5%, 91%)',
+      },
+      inset: {
+        '5px': '-5px',
       }
     },
   },

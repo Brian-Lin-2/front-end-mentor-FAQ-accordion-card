@@ -3,13 +3,12 @@ import Answer from './Answer';
 
 export default function Card() {
   return (
-    <div className="border bg-white flex flex-col justify-center items-center w-5/6 text-xs">
-      
-      <img className="w-72" src="./images/illustration-woman-online-mobile.svg"></img>
-      
+    <div className="bg-white pb-12 pt-24 my-20 rounded-3xl flex flex-col justify-center items-center w-5/6 text-xs bg-mobile-pattern bg-no-repeat bg-top">
       <h1 className="text-3xl font-bold my-10">FAQ</h1>
 
-      <div className="border px-6">
+      <img className="w-60 absolute top-12" src="./images/illustration-woman-online-mobile.svg"></img>
+
+      <div className="px-8">
         <div className="flex flex-col items-center">
           <Question>
             How many team members can I invite?
