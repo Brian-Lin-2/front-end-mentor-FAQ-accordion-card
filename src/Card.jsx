@@ -27,7 +27,7 @@ export default function Card() {
 
       <img className="w-60 absolute top-12 sm:top-1/4 sm:start-32 sm:w-4/12" src="./images/illustration-woman-online-mobile.svg"></img>
 
-      <div className="px-8 sm:pl-14 sm:pr-14 sm:w-1/2">
+      <div className="px-8 sm:pl-14 sm:pr-14 sm:w-1/2 sm:mb-6">
 
         <h1 className="text-3xl font-bold mt-8 mb-4 text-center sm:text-start">FAQ</h1>
 
