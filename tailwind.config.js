@@ -6,6 +6,9 @@ export default {
   ],
   theme: {
     extend: {
+      height: {
+        'card': '450px',
+      },
       backgroundImage: {
         'mobile-pattern': "url('/images/bg-pattern-mobile.svg')",
         'desktop-pattern': "url('/images/bg-pattern-desktop.svg')",

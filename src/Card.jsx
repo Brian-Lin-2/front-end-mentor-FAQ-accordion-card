@@ -1,9 +1,6 @@
 import Question from './Question';
-import { useState } from 'react';
 
 export default function Card() {
-  const [active, setActive] = useState('');
-
   const faq = [
     { id: 1,
       question: "How many team members can I invite?", 
@@ -23,21 +20,21 @@ export default function Card() {
   ]
 
   return (
-    <div className="bg-white pb-12 pt-24 sm:p-0 my-20 sm:m-0 rounded-3xl flex flex-col sm:flex-row justify-center items-center w-5/6 sm:w-4/6 text-xs bg-mobile-pattern sm:bg-none bg-no-repeat bg-top">
+    <div className="bg-white pb-12 pt-24 sm:p-0 my-20 sm:m-0 rounded-3xl flex flex-col sm:flex-row justify-center items-center w-5/6 sm:w-7/12 sm:h-card text-xs bg-mobile-pattern sm:bg-none bg-no-repeat bg-top">
 
       {/* For desktop state */}
-      <div className="sm:w-1/2 sm:bg-desktop-pattern sm:bg-no-repeat sm:bg-right sm:bg-auto"></div>
+      <div className="sm:w-5/12 sm:-ml-20 sm:mr-20 sm:bg-desktop-pattern sm:bg-no-repeat sm:bg-right sm:bg-auto sm:h-card"></div>
 
       <img className="w-60 absolute top-12 sm:top-1/4 sm:start-32 sm:w-4/12" src="./images/illustration-woman-online-mobile.svg"></img>
 
-      <div className="px-8 sm:pl-14 sm:pr-28 sm:w-1/2">
+      <div className="px-8 sm:pl-14 sm:pr-14 sm:w-1/2">
 
         <h1 className="text-3xl font-bold mt-8 mb-4 text-center sm:text-start">FAQ</h1>
 
         {faq.map(question => {
           return (
             <div key={question.id} className="flex flex-col items-center">
-              <Question id={question.id} question={question.question} answer={question.answer} active={active} setActive={setActive}></Question>
+              <Question question={question.question} answer={question.answer}></Question>
             </div>
           );
         })}
